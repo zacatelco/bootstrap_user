@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav id="idNav" class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand"
+          ><img
+            src="img/Screenshot 2024-12-18 141217.png"
+            alt=""
+            width="30px"
+          />BRAND LOGO</a
+        >
+        <div class="d-flex justify-content-end">
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-dark position-relative"
+          >
+            Notifications
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-secondary"
+              >+99 <span class="visually-hidden">unread messages</span></span
+            >
+          </button>
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-dark position-relative"
+          >
+            Alerts
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"
+              ><span class="visually-hidden">unread messages</span></span
+            >
+          </button>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div id="mainDiv" class="d-flex">
+      <div id="sidebarDiv" class="sidebar d-flex flex-column">
+        <nav>
+          <div id="navDiv" class="vh-100 nav flex-column">
+            <nav class="text-white bg-tertiary sidebar w-auto">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"> Dashboard </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Login </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Messages </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Tasks </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Reports </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </nav>
+      </div>
+
+      <div class="mainDiv d-inline-flex-justify-content-around m-5">
+        <div class="row">
+          <div class="contentDiv col-md-6 rounded-4 text-center">
+            <img
+              alt="Image"
+              src="img/Screenshot 2024-12-18 141217.png"
+              class="rounded-circle"
+              width="120px"
+            />
+            <h3 class="text-left">User Name</h3>
+            <address>
+              <strong>Software Engineer</strong><br />
+              123 York St, Suite 600<br />
+              New York, NY 10014<br />
+              (123) 345-7890<br />
+            </address>
+          </div>
+          <div class="contentDiv col-md-6 rounded-4">
+            <form class="form-control-sm">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail4"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputPassword4">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="inputPassword4"
+                    placeholder="Password"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress"
+                  placeholder="1234 Main St"
+                />
+              </div>
+              <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress2"
+                  placeholder="Apartment, studio, or floor"
+                />
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity">City</label>
+                  <input type="text" class="form-control" id="inputCity" />
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputState">State</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>NY</option>
+                    <option>NJ</option>
+                    <option>CA</option>
+                    <option>MA</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="inputZip">Zip</label>
+                  <input type="text" class="form-control" id="inputZip" />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="gridCheck"
+                  />
+                  <label class="form-check-label" for="gridCheck">
+                    This Information is Correct
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-sm btn-primary">
+                Sumbit
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="contentDiv col-md-6 text-center d-flex align-items-center rounded-4"
+          >
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Tasks</th>
+                  <th>Date Started</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>TB - Monthly</td>
+                  <td>01/04/2012</td>
+                  <td>Default</td>
+                </tr>
+                <tr class="table-active">
+                  <td>1</td>
+                  <td>TB - Monthly</td>
+                  <td>01/04/2012</td>
+                  <td>Approved</td>
+                </tr>
+                <tr class="table-success">
+                  <td>2</td>
+                  <td>TB - Monthly</td>
+                  <td>02/04/2012</td>
+                  <td>Declined</td>
+                </tr>
+                <tr class="table-warning">
+                  <td>3</td>
+                  <td>TB - Monthly</td>
+                  <td>03/04/2012</td>
+                  <td>Pending</td>
+                </tr>
+                <tr class="table-danger">
+                  <td>4</td>
+                  <td>TB - Monthly</td>
+                  <td>04/04/2012</td>
+                  <td>Call in to confirm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="contentDiv col-md-6 text-center rounded-4">
+            <h2>Other Information</h2>
+            <p>
+              Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+              tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+              fermentum massa justo sit amet risus. Etiam porta sem malesuada
+              magna mollis euismod. Donec sed odio dui.
+            </p>
+            <p>
+              <a class="btn" href="#">View details »</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
